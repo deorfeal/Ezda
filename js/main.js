@@ -12,6 +12,20 @@
 //     });
 // });
 
+//*** Липкий хедер деск ***
+function handleScroll() {
+  if (window.scrollY === 0) {
+    document.body.classList.remove("body--top");
+  } else {
+    document.body.classList.add("body--top");
+  }
+}
+
+// Запускаем при загрузке страницы и при скролле
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("load", handleScroll);
+//*** Липкий хедер деск ***
+
 // Phone mask
 // Phone mask for multiple inputs
 const phoneInputs = document.querySelectorAll(".phone-input"); // добавь класс всем нужным полям
@@ -345,41 +359,19 @@ $(function () {
 // })
 //
 
-// new Swiper('.catalog-first-swiper', {
-//     slidesPerView: 6,
-//     loop: true,
-//     initialSlide: 0,
-//     centeredSlides: true,
-//     speed: 1000,
-//     navigation: {
-//         prevEl: '.catalog-first-swiper-button-prev',
-//         nextEl: '.catalog-first-swiper-button-next',
-//     },
-//     pagination: {
-//         el: '.recalls-swiper__pagination',
-//         type: 'bullets',
-//     },
-//     autoplay: {
-//         delay: 5000, // задержка между слайдами в миллисекундах
-//         disableOnInteraction: false, // если true, автопрокрутка остановится при взаимодействии пользователя с swiper
-//     },
-//     breakpoints: {
-//         301: {
-//             slidesPerView: 2.2,
-//             centeredSlides: true,
-//             initialSlide: 1,
-//             slidesPerGroup: 1,
-//             loopedSlides: 6,
-//         },
-//         501: {
-//             slidesPerView: 2.5,
-//             centeredSlides: true,
-//             initialSlide: 1,
-//             slidesPerGroup: 1,
-//             loopedSlides: 6,
-//         },
-//     }
-// });
+new Swiper(".heading-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  speed: 750,
+  effect: "fade", // 💡 ключевая строка
+  fadeEffect: {
+    crossFade: true, // Опционально: делает переход плавным между слайдами
+  },
+  autoplay: {
+    delay: 5000, // задержка между слайдами в миллисекундах
+    disableOnInteraction: false, // если true, автопрокрутка остановится при взаимодействии пользователя с swiper
+  },
+});
 
 // Aos - the right initialisation
 jQuery(document).ready(function () {
