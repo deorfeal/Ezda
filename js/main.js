@@ -217,55 +217,54 @@ $(function () {
   // });
 
   // Делаем попап и скрываем по клику вне его
-  // $(document).ready(function () {
-  //     var $popup = $('.popup');
-  //     var $popups = {
-  //         call: $('.popup--call'),
-  //         application: $('.popup--application'),
-  //     };
+  $(document).ready(function () {
+      var $popup = $('.popup');
+      var $popups = {
+          contact: $('.popup--contact'),
+      };
 
-  //     // Функция для показа попапа
-  //     function showPopup($popupToShow) {
-  //         $popupToShow.addClass('popup--active').fadeIn(250, function () {
-  //             $(this).animate({ opacity: 1 }, 250);
-  //         });
-  //         $('body').addClass('body--popup');
-  //     }
+      // Функция для показа попапа
+      function showPopup($popupToShow) {
+          $popupToShow.addClass('popup--active').fadeIn(250, function () {
+              $(this).animate({ opacity: 1 }, 250);
+          });
+          $('body').addClass('body--popup');
+      }
 
-  //     // Функция для скрытия попапа
-  //     function hidePopup($popupToHide) {
-  //         $popupToHide.removeClass('popup--active').fadeOut(250, function () {
-  //             $(this).animate({ opacity: 1 }, 250);
-  //         });
-  //         $('body').removeClass('body--popup');
-  //     }
+      // Функция для скрытия попапа
+      function hidePopup($popupToHide) {
+          $popupToHide.removeClass('popup--active').fadeOut(250, function () {
+              $(this).animate({ opacity: 1 }, 250);
+          });
+          $('body').removeClass('body--popup');
+      }
 
-  //     // Обработчики кликов для показа попапов
-  //     $('.heading-body__link').click(function (event) {
-  //         event.stopPropagation();
-  //         event.preventDefault();
-  //         showPopup($popups.application);
-  //     });
+      // Обработчики кликов для показа попапов
+      $('.header__link').click(function (event) {
+          event.stopPropagation();
+          event.preventDefault();
+          showPopup($popups.contact);
+      });
 
-  //     // Обработчик кликов для скрытия попапов
-  //     $('.cls').click(function (event) {
-  //         event.stopPropagation();
-  //         event.preventDefault();
-  //         hidePopup($popup);
-  //     });
+      // Обработчик кликов для скрытия попапов
+      $('.cls').click(function (event) {
+          event.stopPropagation();
+          event.preventDefault();
+          hidePopup($popup);
+      });
 
-  //     // Скрываем попап при клике вне его области
-  //     $(document).click(function (event) {
-  //         $.each($popups, function (key, $popupToCheck) {
-  //             if ($popupToCheck.hasClass('popup--active')) {
-  //                 var $popupInner = $popupToCheck.find('.popup__inner');
-  //                 if (!$popupInner.is(event.target) && $popupInner.has(event.target).length === 0) {
-  //                     hidePopup($popupToCheck);
-  //                 }
-  //             }
-  //         });
-  //     });
-  // });
+      // Скрываем попап при клике вне его области
+      $(document).click(function (event) {
+          $.each($popups, function (key, $popupToCheck) {
+              if ($popupToCheck.hasClass('popup--active')) {
+                  var $popupInner = $popupToCheck.find('.popup__inner');
+                  if (!$popupInner.is(event.target) && $popupInner.has(event.target).length === 0) {
+                      hidePopup($popupToCheck);
+                  }
+              }
+          });
+      });
+  });
   //
 
   // Копировать значение с инпута
