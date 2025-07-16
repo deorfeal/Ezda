@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список вакансий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/iti.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+        <header class="header">
+            <div class="big-container">
+                <div class="header__inner">
+                    <a class="header__logo logo" href="#">
+                        <img src="images/logo.svg" alt="logo" data-aos="fade">
+                    </a>
+                    <div class="header__wrapper">
+                        <nav class="header__menu menu" data-aos="fade">
+                            <ul class="menu__list menu-list">
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Тренинги
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Афиша
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Вакансии
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__lang lang" data-aos="fade">
+                            <div class="lang__current">
+                                <span>
+                                    RU
+                                </span>
+                                <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.0001 6.5L10 0.5L5.98411 0.5L4.01596 0.5L0 0.5L5.0001 6.5Z"
+                                        fill="#212329" />
+                                </svg>
+                            </div>
+                            <ul class="lang__list lang-list">
+                                <li class="lang-list__item lang-item">
+                                    <a class="lang-item__link" href="#">
+                                        Қаз
+                                    </a>
+                                </li>
+                                <li class="lang-list__item lang-item">
+                                    <a class="lang-item__link" href="#">
+                                        Рус
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__wrp" data-aos="fade">
+                            <a class="header__link btn btn--orange" href="#">
+                                Онлайн заявка
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__burger burger" data-aos="fade">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <main class="main">
+                <section class="main__head head head head--iconed">
+                    <div class="container">
+                        <div class="head__inner">
+                            <div class="head__body head-body">
+                                <h1 class="head-body__title" data-aos="fade">
+                                    Вакансии
+                                    Актив-Безопасность
+                                </h1>
+                            </div>
+                            <div class="head__view head-view">
+                                <picture class="head-view__img" data-aos="fade" data-aos-delay="200">
+                                    <img src="images/head-vacancies-img.svg" alt="img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="main__breadcrumbs breadcrumbs" data-aos="fade">
+                    <div class="container">
+                        <ul class="breadcrumbs__list breadcrumbs-list">
+                            <li class="breadcrumbs-list__item">
+                                <a class="breadcrumbs-list__link" href="#">
+                                    Главная
+                                </a>
+                                <span>
+                                    /
+                                </span>
+                            </li>
+                            <li class="breadcrumbs-list__item">
+                                <a class="breadcrumbs-list__link" href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="main__vacancies vacancies">
+                    <div class="container">
+                        <div class="vacancies__inner">
+                            <div class="vacancies__body vacancies-body">
+                                <div class="vacancies-body__titling titling">
+                                    <h2 class="titling__title title" data-aos="fade">
+                                        Открытые вакансии
+                                    </h2>
+                                    <p class="head-body__subtext" data-aos="fade">
+                                        Новая вакансия:
+                                    </p>
+                                </div>
+                                <div class="vacancies-body__wrap" data-aos="fade">
+                                    <a class="vacancies-body__link btn btn--orange" href="#">
+                                        Тренер по защитному вождению
+                                    </a>
+                                </div>
+                            </div>
+                            <picture class="vacancies__img" data-aos="fade">
+                                <img src="images/vacancies-img.webp" alt="img">
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+                <div class="main__funnel funnel" data-aos="fade">
+                    <div class="container">
+                        <div class="funnel__inner">
+                            <p class="funnel__text" data-aos="fade-left" data-aos-delay="200">
+                                Если Вы уверены, что и нам, и Вам нужно трудиться вместе - напишите нам на
+                                <a href="mailto:MyJob@ezda.ru">
+                                    MyJob@ezda.ru,
+                                </a>
+                                почему!
+                                Все обращения рассматриваются, при этом право отвечать или не вступать в переписку
+                                остается за нашей компанией.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer" data-aos="fade">
+                <div class="big-container">
+                    <div class="footer__top footer-top">
+                        <div class="footer-top__wrapper">
+                            <a class="footer-top__logo logo" href="#">
+                                <img src="images/logo-white.svg" alt="logo">
+                            </a>
+                            <div class="footer-top__copyright">
+                                © 2001-2025, ООО “АКТИВ-БЕЗОПАСНОСТЬ”
+                            </div>
+                        </div>
+                        <nav class="footer-top__navigation navigation">
+                            <ul class="navigation__list navigation-list">
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Тренинги
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Афиша
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Галерея
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Вакансии
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="navigation-list__item">
+                                    <a class="navigation-list__link" href="#">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer-top__box footer-box">
+                            <a class="footer-box__link" href="tel:+74952344414">
+                                +7 (495) 234-44-14
+                            </a>
+                            <div class="footer-box__wrapper">
+                                <a class="footer-box__mail" href="mailto:ab@ezda.ru">
+                                    ab@ezda.ru
+                                </a>
+                                <div class="footer-box__address">
+                                    127018 г. Москва, <br>
+                                    ул. Сущёвский Вал, д. 16, стр. 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom footer-bottom">
+                        <a class="footer-bottom__policy" href="#">
+                            Политика конфиденциальности
+                        </a>
+                        <a class="footer-bottom__developer" href="#">
+                            Дизайн Svaler
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/iti.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,16 +1,16 @@
-// document.querySelectorAll('.faq-list__item').forEach(item => {
-//     item.addEventListener('click', () => {
-//         // Если элемент уже активен, убрать активный класс
-//         if (item.classList.contains('faq-list__item--active')) {
-//             item.classList.remove('faq-list__item--active');
-//         } else {
-//             // Убираем класс у всех элементов
-//             document.querySelectorAll('.faq-list__item').forEach(el => el.classList.remove('faq-list__item--active'));
-//             // Добавляем класс текущему элементу
-//             item.classList.add('faq-list__item--active');
-//         }
-//     });
-// });
+document.querySelectorAll('.faq-list__item').forEach(item => {
+    item.addEventListener('click', () => {
+        // Если элемент уже активен, убрать активный класс
+        if (item.classList.contains('faq-list__item--active')) {
+            item.classList.remove('faq-list__item--active');
+        } else {
+            // Убираем класс у всех элементов
+            document.querySelectorAll('.faq-list__item').forEach(el => el.classList.remove('faq-list__item--active'));
+            // Добавляем класс текущему элементу
+            item.classList.add('faq-list__item--active');
+        }
+    });
+});
 
 //*** Липкий хедер деск ***
 function handleScroll() {
@@ -372,6 +372,14 @@ new Swiper(".heading-swiper", {
     disableOnInteraction: false, // если true, автопрокрутка остановится при взаимодействии пользователя с swiper
   },
 });
+
+new Swiper(".pictures-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  speed: 750,
+  spaceBetween: 30,
+});
+
 
 // Aos - the right initialisation
 jQuery(document).ready(function () {
